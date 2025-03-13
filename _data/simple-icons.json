@@ -12220,6 +12220,11 @@
 		"guidelines": "https://www.pingdom.com/resources/brand-assets/"
 	},
 	{
+		"title": "Pinia",
+		"hex": "FFE56C",
+		"source": "https://github.com/vuejs/pinia/blob/b82a38a6f41b3507d3ea887011d6da9507747997/packages/docs/public/logo.svg"
+	},
+	{
 		"title": "pino",
 		"hex": "687634",
 		"source": "https://github.com/pinojs/pino/blob/bb31ed77568959670cce62ca2847234b3f2cb87f/pino-tree.png"
