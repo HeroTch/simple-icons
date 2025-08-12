@@ -85,14 +85,16 @@
 		"pretest": "npm run prepublishOnly",
 		"test": "mocha tests --reporter tests/min-reporter.cjs --inline-diffs",
 		"posttest": "npm run postpublish",
-		"tslint": "npm run tslint:main && npm run tslint:sdk",
+		"tslint": "npm run tslint:main && npm run tslint:sdk && npm run tslint:ts",
 		"tslint:main": "tsc -p jsconfig.json",
 		"tslint:sdk": "tsc -p scripts/release/sdk-ts-defs-jsconfig.json --noEmit",
+		"tslint:ts": "tsc",
 		"wslint": "editorconfig-checker",
 		"xo:fix": "xo --fix"
 	},
 	"devDependencies": {
 		"@inquirer/prompts": "7.5.0",
+		"@sindresorhus/tsconfig": "8.0.1",
 		"@types/mocha": "10.0.10",
 		"@types/node": "22.15.3",
 		"chalk": "5.4.1",
@@ -115,7 +117,7 @@
 		"svglint": "4.1.0",
 		"svgo": "4.0.0",
 		"svgpath": "2.6.0",
-		"typescript": "5.8.3",
+		"typescript": "5.9.2",
 		"xo": "1.0.0"
 	},
 	"engines": {

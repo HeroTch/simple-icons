@@ -68,6 +68,14 @@ const xoConfig = [
 		},
 	},
 	{
+		files: ['**/*.ts'],
+		rules: {
+			'headers/header-format': 'off',
+			'jsdoc/require-param-type': 'off',
+			'jsdoc/require-returns-type': 'off',
+		},
+	},
+	{
 		files: ['sdk.mjs', 'sdk.d.ts'],
 		rules: {
 			'@eslint-community/eslint-comments/disable-enable-pair': 'off',
